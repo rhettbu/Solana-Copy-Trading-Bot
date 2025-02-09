@@ -7,6 +7,7 @@ import { TOKEN_PROGRAM_ID } from "@solana/spl-token";
  */
 
 export async function getAtaList(connection: Connection, pubkey: string) {
+    
     const filters: GetProgramAccountsFilter[] = [
         {
             dataSize: 165,    //size of account (bytes)
@@ -17,6 +18,7 @@ export async function getAtaList(connection: Connection, pubkey: string) {
                 bytes: pubkey,  //our search criteria, a base58 encoded string
             },
         }];
+
     const accounts = await connection.getParsedProgramAccounts(
         TOKEN_PROGRAM_ID, //new PublicKey("TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA")
         { filters: filters }

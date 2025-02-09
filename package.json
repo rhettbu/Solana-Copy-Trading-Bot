@@ -1,14 +1,14 @@
 {
   "name": "copy-trading-bot",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.2.0",
+  "description": "solana copy trading bot",
   "main": "index.js",
   "scripts": {
     "dev": "ts-node index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "rhett",
   "license": "ISC",
   "dependencies": {
     "@metaplex-foundation/js": "^0.20.1",

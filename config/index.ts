@@ -8,6 +8,7 @@ export const heliusPOST = async (uri: string, data: any) => {
     return returnData.data
 }
 
+//
 export const getTokenPrice = async (tokenAddr : string) => {
     const tokenAPrice = await axios.get(`https://api.geckoterminal.com/api/v2/simple/networks/solana/token_price/${tokenAddr}`);
     return parseFloat(tokenAPrice.data.data.attributes.token_prices[tokenAddr])

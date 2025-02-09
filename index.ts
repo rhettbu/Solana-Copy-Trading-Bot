@@ -173,7 +173,7 @@ export async function sendRequest(inputpubkey: string) {
 	)
 	console.log("🚀 ~ sendRequest ~ tokenAccounts:", tokenAccounts)
 	
-	// Private code
+	// Private code here
 
 	if (temp.length > 0) {
 		ws.send(JSON.stringify(request));

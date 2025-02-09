@@ -1,4 +1,4 @@
-# Solana Copy Trading Bot
+# Solana Copy Trading Bot By using grpc
 
 ## Overview
 
